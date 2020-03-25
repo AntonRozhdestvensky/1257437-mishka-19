@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Антон Рождественский](https://up.htmlacademy.ru/adaptive/19/user/1257437).
-* Наставник: [Андрей Островский] (https://htmlacademy.ru/profile/grandmaus).
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
