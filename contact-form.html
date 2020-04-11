@@ -29,7 +29,69 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page-main">
+    <div class="page-title">
+      <h1 class="page-title__contact-form">Вязание на заказ</h1>
+    </div>
+    <section class="order">
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="order__form">
+        <fieldset class="order__item order__item--type">
+          <legend class="order__title">Тип</legend>
+          <input type="radio" class="order__radio" name="Тип" value="Аксессуар для интерьера" id="accessories">
+          <label for="accessories" class="order_label">Аксессуар для интерьера</label>
+          <input type="radio" class="order__radio" name="Тип" value="Детская игрушка" id="toy">
+          <label for="toy" class="order_label">Детская игрушка</label>
+        </fieldset>
+
+        <fieldset class="order__item order__item--color">
+          <legend class="order__title">Цвет</legend>
+          <input type="checkbox" class="order__checkbox" id="white" name="Цвет" value="Белый" checked>
+          <label for="white" class="order__label">Белый</label>
+          <input type="checkbox" class="order__checkbox" id="grey" name="Цвет" value="Серый" checked>
+          <label for="grey" class="order__label">Серый</label>
+          <input type="checkbox" class="order__checkbox" id="tiffany" name="Цвет" value="Тиффани">
+          <label for="tiffany" class="order__label">«Тиффани»</label>
+          <input type="checkbox" class="order__checkbox" id="black" name="Цвет" value="Черный">
+          <label for="black" class="order__label">Черный</label>
+          <input type="checkbox" class="order__checkbox" id="pink" name="Цвет" value="Розовый">
+          <label for="pink" class="order__label">Розовый</label>
+          <input type="checkbox" class="order__checkbox" id="orange" name="Цвет" value="Оранжевый">
+          <label for="orange" class="order__label">Оранжевый</label>
+        </fieldset>
+
+        <fieldset class="order__item order__item--name">
+          <legend class="order__title">Фио</legend>
+          <label class="order__label">Имя:</label>
+          <input type="text" class="order__input" placeholder="Введите ваше имя*" name="Имя">
+          <label class="order__label">Фамилия:</label>
+          <input type="text" class="order__input" placeholder="Укажите фамилию*" name="Фамилия">
+          <label class="order__label">Отчество:</label>
+          <input type="text" class="order__input" placeholder="Отчество, если желаете" name="Отчество">
+        </fieldset>
+
+        <fieldset class="order__item order__item--tel">
+          <legend class="order__title">Тел</legend>
+          <input type="tel" class="order__input order__input--tel" placeholder="+7 XXX XX XX*" name="Телефон">
+        </fieldset>
+
+        <fieldset class="order__item order__item--email">
+          <legend class="order__title">E-mail</legend>
+          <input type="email" class="order__input order__input--email" placeholder="Ваш Email*" name="E-mail">
+        </fieldset>
+
+        <fieldset class="order__item order__item--textarea">
+          <legend class="order__title">Доп</legend>
+          <textarea class="order__textarea" rows="6" placeholder="Опишите все ваши пожелания к заказу" name="Комментарий"></textarea>
+        </fieldset>
+
+        <div class="order__footer">
+          <small class="order__text order__text--small">*Поля обязательны для заполнения</small>
+          <button class="order-btn">Отправить заказ</button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer class="page-footer">
     <ul class="page-footer__social social-list">
