@@ -1,6 +1,7 @@
 body {
-  background-color: #ffffff;
-  min-width: 320px;
+  background-color: @body-background;
+  font-size: @body-font-size;
+  width: 320px;
   margin: 0px;
   padding: 0px;
 }
@@ -14,4 +15,13 @@ body {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
