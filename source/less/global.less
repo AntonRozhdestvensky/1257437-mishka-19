@@ -1,17 +1,22 @@
 body {
   background-color: @body-background;
   font-size: @body-font-size;
+
   min-width: 320px;
   margin: 0px;
+
   padding: 0px;
 }
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
+
   margin: -1px;
   padding: 0;
+
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
@@ -19,5 +24,24 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 256px;
+  height: 50px;
+
+  font-family: "@font-bold", Georgia, Serif;
+  font-size: @body-font-size + 3px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  border: 2px solid @button-border-color;
+  color: @secondary-text-color;
+  cursor: pointer;
 }
 
