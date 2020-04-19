@@ -1,62 +1,65 @@
 .header-navigation {
   width: 320px;
   margin: 0 auto;
-  &__btn {
-    position: relative;
-    left: 260px;
-    top: 5px;
-    background-image: url("../img/icon-menu-open.svg");
-    background-repeat: no-repeat;
-    background-color: #ffffff;
-    background-size: 21px 20px;
-    border: none;
-    cursor: pointer;
-  }
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-left: 30px;
-  }
-  &__item {
-    position: relative;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: @body-font-size + 2px;
-    line-height: 24px;
-    vertical-align: middle;
-    color: @primary-text-color;
+}
 
-    &--search {
-      ::before {
-        position: absolute;
-        display: table;
-        width: 20px;
-        height: 20px;
-        left: -10%;
-        top: 50%;
-        transform: translateY(-40%);
-        content: url("../img/icon-search.svg");
-        background-repeat: no-repeat;
-        background-size: 20px 19px;
-        opacity: 0.2;
-      }
+.header-navigation__btn {
+  position: relative;
+  left: 260px;
+  top: 5px;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: 21px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.header-navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.header-navigation__item {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: @body-font-size + 2px;
+  line-height: 24px;
+  vertical-align: middle;
+  color: @primary-text-color;
+
+  &--search {
+    ::before {
+      position: absolute;
+      display: table;
+      width: 20px;
+      height: 20px;
+      left: -10%;
+      top: 50%;
+      transform: translateY(-40%);
+      content: url("../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+      opacity: 0.2;
     }
+  }
 
-    &--cart {
-      ::before {
-        position: absolute;
-        display: table;
-        width: 20px;
-        height: 20px;
-        left: -10%;
-        top: 50%;
-        transform: translateY(-40%);
-        content: url("../img/icon-cart.svg");
-        background-repeat: no-repeat;
-        background-size: 20px 19px;
-        opacity: 0.2;
-      }
+  &--cart {
+    ::before {
+      position: absolute;
+      display: table;
+      width: 20px;
+      height: 20px;
+      left: -10%;
+      top: 50%;
+      transform: translateY(-40%);
+      content: url("../img/icon-cart.svg");
+      background-repeat: no-repeat;
+      background-size: 20px 19px;
+      opacity: 0.2;
     }
   }
 }
