@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <Title>Мишка - каталог товаров</Title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="./img/logo.svg" alt="Логотип магазина Мишка" width="86" height="35">
+      <img class="page-header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
     </a>
     <nav class="header-navigation">
       <div class="header-navigation__wrapper">
-        <button class="header-navigation__btn">Открыть меню</button>
+        <button class="header-navigation__btn"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <ul class="header-navigation__list">
         <li class="header-navigation__item">
@@ -38,7 +40,7 @@
         <li class="catalog__item">
           <div class="catalog__info">
             <picture>
-              <img src="./img/product-1.jpg" alt="Вязанный заяц" width="260" height="195" class="catalog__image">
+              <img src="./img/photo-hare-mobile@1x.jpg" alt="Вязанный заяц" width="260" height="195" class="catalog__image">
             </picture>
             <h3 class="catalog__title">
               <a href="#" class="catalog__link">Зайчик-попрыгайчик</a>
@@ -53,7 +55,7 @@
         <li class="catalog__item">
           <div class="catalog__info">
             <picture>
-              <img class="catalog__image" src="./img/product-2.jpg" alt="Корзинка для белья" width="260" height="195">
+              <img class="catalog__image" src="./img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
             </picture>
             <h3 class="catalog__title">
               <a href="#" class="catalog__link">Корзинка для белья</a>
@@ -68,7 +70,7 @@
         <li class="catalog__item">
           <div class="catalog__info">
             <picture>
-              <img class="catalog__image" src="./img/product-3.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+              <img class="catalog__image" src="./img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
             </picture>
             <h3 class="catalog__title">
               <a class="catalog__link" href="#">Большая корзинка для игрушек</a>
@@ -87,7 +89,7 @@
         <h2 class="video__title video__title--icon">Процесс производства</h2>
         <div class="video__player">
           <picture>
-            <img src="./img/video-mobile.jpg" alt="Процесс производства" width="260" height="150">
+            <img src="./img/video-mobile@1x.jpg" alt="Процесс производства" width="260" height="150">
             <button type="button" class="video__play">Посмотреть видео</button>
           </picture>
         </div>
@@ -99,18 +101,18 @@
   </main>
   <footer class="page-footer">
     <ul class="page-footer__social social-list">
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--instagram">
+      <li class="social-list__item social-list__item--instagram">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">instagram</span>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--facebook">
+      <li class="social-list__item social-list__item--facebook">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">facebook</span>
         </a>
       </li>
-      <li class="social-list__item">
-        <a href="#" class="social-list__link social-list__link--twitter">
+      <li class="social-list__item social-list__item--twitter">
+        <a href="#" class="social-list__link">
           <span class="visually-hidden">twitter</span>
         </a>
       </li>
