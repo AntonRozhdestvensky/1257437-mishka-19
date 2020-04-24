@@ -12,37 +12,33 @@
       <img class="page-header__logo-image" src="./img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
     </a>
     <nav class="header-navigation">
-      <div class="header-navigation__wrapper">
-        <button class="header-navigation__btn"><span class="visually-hidden">Открыть меню</span></button>
-      </div>
+      <button class="header-navigation__btn"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="header-navigation__list">
         <li class="header-navigation__item">
-          <a href="catalog.html">Каталог товаров</a>
+          <a href="catalog.html" class="header-navigation__item-link">Каталог товаров</a>
         </li>
         <li class="header-navigation__item">
-          <a href="contact-form.html">Вязание на заказ</a>
+          <a href="contact-form.html" class="header-navigation__item-link">Вязание на заказ</a>
         </li>
         <li class="header-navigation__item header-navigation__item--search">
-          <a href="#">Поиск по сайту</a>
+          <a href="#" class="header-navigation__item-link">Поиск по сайту</a>
         </li>
         <li class="header-navigation__item header-navigation__item--cart">
-          <a href="#">Корзина: пока пуста</a>
+          <a href="#" class="header-navigation__item-link">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <section class="intro">
-      <div class="intro__image intro__image--home">
-        <h1 class="intro__title">Милые штуки<br> ручной<br> работы для дома</h1>
-      </div>
+      <h1 class="intro__title">Милые штуки<br> ручной<br> работы для дома</h1>
       <div class="intro__category">
         <ul class="intro__list">
-          <li class="intro__item intro__item--interier">
-            <a href="#" class="intro__link intro__link--interier">Предметы интерьера</a>
+          <li class="intro__item intro__item__icon intro__item__icon--interier">
+            <a href="#" class="intro__link">Предметы<br>интерьера</a>
           </li>
-          <li class="intro__item intro__item--toys">
-            <a href="#" class="intro__link intro__link--toys">Детские игрушки</a>
+          <li class="intro__item intro__item--dark intro__item__icon intro__item__icon--toys">
+            <a href="#" class="intro__link">Детские<br>игрушки</a>
           </li>
         </ul>
       </div>
@@ -53,35 +49,53 @@
       <div class="product-week__card">
         <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
         <table class="product-week__table">
-          <tr>
+          <tr class="product-week__feature">
             <td class="product-week__params">Цвет:</td>
             <td class="product-week__value">"Тиффани"/серый</td>
           </tr>
-          <tr>
+          <tr class="product-week__feature">
             <td class="product-week__params">Диаметр:</td>
             <td class="product-week__value">25 см</td>
           </tr>
-          <tr>
+          <tr class="product-week__feature">
             <td class="product-week__params">Высота:</td>
             <td class="product-week__value">15 см</td>
           </tr>
         </table>
         <picture>
-          <img src="./img/triple-set-mobile@1x.jpg" alt="Три разноцветных вязаных корзинки" width="260" height="315">
+          <img class="product-week__image" src="./img/triple-set-mobile@1x.jpg" alt="Три разноцветных вязаных корзинки" width="260" height="315">
         </picture>
-        <span class="product-week__price">Цена: 990 руб.</span>
+        <p class="product-week__price">Цена: 990 руб.</p>
         <a href="#" class="product-week__cart button">Заказать</a>
       </div>
     </section>
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
-        <li class="about-us__item about-us__item--ecology">Экологически чистые материалы</li>
-        <li class="about-us__item about-us__item--style">Скандинавский стиль по российской цене</li>
-        <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__item about-us__item--heart">Связано вручную с любовью и умилением</li>
-        <li class="about-us__item about-us__item--support">Поддержка отечественного производителя</li>
-        <li class="about-us__item about-us__item--gift">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item">
+          <img class="about-us__ecology" src="./img/icon-1-svg.svg" width="32" height="37" alt="Экологически чистые материалы">
+          <p class="about-us__description">Экологически чистые<br>материалы</p>
+        </li>
+        <li class="about-us__item">
+          <img class="about-us__style" src="./img/icon-3-svg.svg" width="47" height="27" alt="Скандинавский стиль по российской цене">
+          <p class="about-us__description">Скандинавский стиль<br> по российской цене</p>
+        </li>
+        <li class="about-us__item">
+          <img class="about-us__likes" src="img/icon-5-svg.svg" width="33" height="28" alt="Увеличивает лайки на фотографиях">
+          <p class="about-us__description">Увеличивает лайки<br> на фотографиях</p>
+        </li>
+        <li class="about-us__item">
+          <img class="about-us__heart" src="img/icon-2-svg.svg" width="34" height="34" alt="Связано вручную с любовью и умилением">
+          <p class="about-us__description">Связано вручную с<br> любовью и умилением</p>
+        </li>
+        <li class="about-us__item">
+          <img class="about-us__support" src="img/icon-4-svg.svg" width="54" height="23" alt="Поддержка отечественного производителя">
+          <p class="about-us__description">Поддержка отечественного<br> производителя</p>
+        </li>
+        <li class="about-us__item">
+          <img class="about-us__gift" src="img/icon-6-svg.svg" width="33" height="32" alt="Поставляется в подарочной упаковке">
+          <p class="about-us__description">Поставляется в<br> подарочной упаковке</p>
+        </li>
       </ul>
     </section>
     <section class="reviews">
@@ -89,27 +103,34 @@
       <div class="reviews-quotes">
         <p class="reviews-quotes__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
         В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <span class="reviews-quotes__autor">Анастасия Красильникова</span>
-        <a href="#" class="reviews-quotes__autor-link">@misssssiskras</a>
+        <p class="reviews-quotes__autor">Анастасия Красильникова</p>
+        <p class="reviews-quotes__autor-link">@misssssiskras</p>
       </div>
       <div class="reviews__pagination">
-        <button class="reviews__btn reviews__btn--prev" type="button">Читать предыдущий отзыв</button>
-        <button class="reviews__btn reviews__btn--next" type="button">Читать следующий отзыв</button>
+        <button class="reviews__btn reviews__btn--prev" type="button"><span class="visually-hidden">Читать предыдущий отзыв</span></button>
+        <button class="reviews__btn reviews__btn--next" type="button"><span class="visually-hidden">Читать следующий отзыв</span></button>
       </div>
       <a href="#" class="reviews__write button">Написать</a>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__item">
-          <span class="contacts__email">e-mail:</span>
-          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </li>
-        <li class="contacts__item">
-          <span class="contacts__address">адресс:</span>
-          <span class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
-        </li>
-      </ul>
+      <div class="contacts_wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__item">
+          <div class="contacts__info">
+            <p class="contacts__text">e-mail:</p>
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru"
+              >info@mimimishkashop.ru</a
+            >
+          </div>
+          <div class="contacts__info">
+            <p class="contacts__text">адрес:</p>
+            <p class="contacts__address">
+              г. Санкт-Петербург, <br />ул. Большая Конюшенная,<br />
+              д. 19/8, офис 101
+            </p>
+          </div>
+        </div>
+      </div>
       <div class="contacts__map">
         <picture>
           <img src="./img/map-mobile@1x.jpg" width="320" height="auto">
@@ -136,12 +157,12 @@
         </a>
       </li>
     </ul>
-    <div class="footer-copyright">
-      <span class="footer-copyright__text">Разработано</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright__link footer-copyright__link--icon">
-        <span class="visually-hidden">HTML Academy</span>
-      </a>
-    </div>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright">
+      Разработано
+      <svg class="footer-copyright__logo" fill="#63d1bb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+      <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
+      </svg>
+    </a>
   </footer>
 </body>
 </html>

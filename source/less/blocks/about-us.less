@@ -1,17 +1,28 @@
 .about-us {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 34px 30px;
 }
 
 .about-us__title {
   font-size: @body-font-size + 10px;
   line-height: 30px;
   font-weight: bold;
+  margin: 0;
+  padding-bottom: 31px;
 }
 
 .about-us__list {
-  padding: 0;
-  list-style: none;
-  line-height: 20px;
+  .listStyle();
+}
+
+.about-us__item {
+  margin-bottom: 28px;
+}
+
+.about-us__description {
+  font-size: @body-font-size + 2px;
   font-weight: bold;
+  line-height: 20px;
+  color: @primary-text-color;
+  margin: 0;
+  padding-top: 28px;
 }
