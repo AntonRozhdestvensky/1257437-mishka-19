@@ -13,4 +13,26 @@
   display: block;
   width: 86px;
   height: 35px;
+  background: url("../img/logo-mobile.svg") no-repeat center;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    padding: 0 52px;
+    height: 88px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 0;
+  }
+
+  .page-header__logo {
+    margin-bottom: 0;
+    width: 112px;
+    height: 46px;
+    background-image: url("../img/logo-tablet.svg");
+    position: absolute;
+    top: 22px;
+    left: 52px;
+  }
 }

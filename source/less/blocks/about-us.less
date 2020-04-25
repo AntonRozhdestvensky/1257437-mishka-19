@@ -26,3 +26,33 @@
   margin: 0;
   padding-top: 28px;
 }
+
+@media (min-width: 768px) {
+  .about-us {
+    padding: 0 52px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .about-us__title {
+    font-size: @body-font-size + 28px;
+    line-height: 50px;
+    color: @primary-text-color;
+    padding-bottom: 47px;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 60px;
+  }
+
+  .about-us__description {
+    font-size: @body-font-size + 5px;
+    line-height: 22px;
+  }
+}

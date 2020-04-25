@@ -64,3 +64,75 @@
   font-size: @body-font-size + 2px;
   margin: 28px 0 6px;
 }
+
+@media (min-width: 768px) {
+  .product-week {
+    padding: 0 52px;
+    background: url(../img/bg-zigzag-line.svg) repeat-x bottom;
+    position: relative;
+    padding-bottom: 63px;
+    background-size: auto 15px;
+  }
+
+  .product-week__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-week__title {
+    font-size: @body-font-size + 28px;
+    line-height: 50px;
+    color: @primary-text-color;
+    margin: 0;
+    padding: 0;
+  }
+
+  .product-week__promo {
+    font-size: @body-font-size + 2px;
+    line-height: 17px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .product-week__card {
+    width: 292px;
+    margin-top: 55px;
+    padding-right: 51px;
+  }
+
+  .product-week__description {
+    padding: 0;
+    padding-bottom: 54px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .product-week__table {
+    margin-bottom: 59px;
+    line-height: 20px;
+  }
+
+  .product-week__image {
+    width: 333px;
+    height: 404px;
+    position: absolute;
+    top: 108px;
+    right: 52px;
+    margin: 0;
+  }
+
+  .product-week__price {
+    text-align: left;
+    padding-left: 72px;
+    font-size: 20px;
+  }
+
+  .product-week__cart {
+    font-size: @body-font-size + 2px;
+    line-height: 20px;
+    width: 292px;
+    margin-top: 35px;
+  }
+}
+
