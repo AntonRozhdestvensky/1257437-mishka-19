@@ -7,7 +7,7 @@
 }
 
 .intro__title {
-  font-size: @body-font-size + 12px;
+  font-size: 27px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
@@ -67,14 +67,14 @@
 }
 
 .intro__link {
-  font-size: @body-font-size + 2px;
+  font-size: 17px;
   color: @white;
   line-height: 24px;
   font-weight: bold;
   width: 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .intro {
     background-image: url("../img/hero-tablet@1x.jpg");
     padding: 0 52px;
@@ -99,7 +99,7 @@
   }
 
   .intro__title {
-    font-size: @body-font-size + 28px;
+    font-size: 43px;
     line-height: 50px;
     padding-top: 161px;
     padding-bottom: 318px;
@@ -118,7 +118,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
   .intro {
     max-width: 1150px;
     margin: 0 auto;

@@ -3,7 +3,7 @@
 }
 
 .about-us__title {
-  font-size: @body-font-size + 10px;
+  font-size: 25px;
   line-height: 30px;
   font-weight: bold;
   margin: 0;
@@ -19,7 +19,7 @@
 }
 
 .about-us__description {
-  font-size: @body-font-size + 2px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: @primary-text-color;
@@ -27,7 +27,7 @@
   padding-top: 28px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-width) {
   .about-us {
     padding: 0 52px;
     padding-top: 60px;
@@ -35,7 +35,7 @@
   }
 
   .about-us__title {
-    font-size: @body-font-size + 28px;
+    font-size: 43px;
     line-height: 50px;
     color: @primary-text-color;
     padding-bottom: 47px;
@@ -52,12 +52,12 @@
   }
 
   .about-us__description {
-    font-size: @body-font-size + 5px;
+    font-size: 20px;
     line-height: 22px;
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: @desktop-width) {
   .about-us {
     max-width: 1050px;
     margin: 0 auto;
