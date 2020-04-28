@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <Title>Мишка - форма связи</Title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo"></a>
+    <nav class="header-navigation">
+      <button class="header-navigation__btn"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="header-navigation__list">
+        <li class="header-navigation__item">
+          <a href="catalog.html" class="header-navigation__item-link">Каталог товаров</a>
+        </li>
+        <li class="header-navigation__item">
+          <a href="contact-form.html" class="header-navigation__item-link">Вязание на заказ</a>
+        </li>
+        <li class="header-navigation__item header-navigation__item--search">
+          <a href="#" class="header-navigation__item-link">Поиск по сайту</a>
+        </li>
+        <li class="header-navigation__item header-navigation__item--cart">
+          <a href="#" class="header-navigation__item-link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-contact">
+    <div class="page-title">
+      <h1 class="page-title__contact-form">Вязание на заказ</h1>
+    </div>
+    <section class="order">
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru" method="post" class="order__form">
+        <fieldset class="order__item order__item--type">
+          <legend class="order__title">Тип</legend>
+          <input type="radio" class="order__radio" name="Тип" value="Аксессуар для интерьера" id="accessories">
+          <label for="accessories" class="order_label">Аксессуар для интерьера</label>
+          <input type="radio" class="order__radio" name="Тип" value="Детская игрушка" id="toy">
+          <label for="toy" class="order_label">Детская игрушка</label>
+        </fieldset>
+
+        <fieldset class="order__item order__item--color">
+          <legend class="order__title">Цвет</legend>
+          <input type="checkbox" class="order__checkbox" id="white" name="Цвет" value="Белый" checked>
+          <label for="white" class="order__label">Белый</label>
+          <input type="checkbox" class="order__checkbox" id="grey" name="Цвет" value="Серый" checked>
+          <label for="grey" class="order__label">Серый</label>
+          <input type="checkbox" class="order__checkbox" id="tiffany" name="Цвет" value="Тиффани">
+          <label for="tiffany" class="order__label">«Тиффани»</label>
+          <input type="checkbox" class="order__checkbox" id="black" name="Цвет" value="Черный">
+          <label for="black" class="order__label">Черный</label>
+          <input type="checkbox" class="order__checkbox" id="pink" name="Цвет" value="Розовый">
+          <label for="pink" class="order__label">Розовый</label>
+          <input type="checkbox" class="order__checkbox" id="orange" name="Цвет" value="Оранжевый">
+          <label for="orange" class="order__label">Оранжевый</label>
+        </fieldset>
+
+        <fieldset class="order__item order__item--name">
+          <legend class="order__title">Фио</legend>
+          <label class="order__label">Имя:</label>
+          <input type="text" class="order__input" placeholder="Введите ваше имя*" name="Имя">
+          <label class="order__label">Фамилия:</label>
+          <input type="text" class="order__input" placeholder="Укажите фамилию*" name="Фамилия">
+          <label class="order__label">Отчество:</label>
+          <input type="text" class="order__input" placeholder="Отчество, если желаете" name="Отчество">
+        </fieldset>
+
+        <fieldset class="order__item order__item--tel">
+          <legend class="order__title">Тел</legend>
+          <input type="tel" class="order__input order__input--tel" placeholder="+7 XXX XX XX*" name="Телефон">
+        </fieldset>
+
+        <fieldset class="order__item order__item--email">
+          <legend class="order__title">E-mail</legend>
+          <input type="email" class="order__input order__input--email" placeholder="Ваш Email*" name="E-mail">
+        </fieldset>
+
+        <fieldset class="order__item order__item--textarea">
+          <legend class="order__title">Доп</legend>
+          <textarea class="order__textarea" rows="6" placeholder="Опишите все ваши пожелания к заказу" name="Комментарий"></textarea>
+        </fieldset>
+
+        <div class="order__footer">
+          <small class="order__text order__text--small">*Поля обязательны для заполнения</small>
+          <button class="order-btn">Отправить заказ</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__social social-list">
+        <li class="social-list__item social-list__item--instagram">
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">instagram</span>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--facebook">
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--twitter">
+          <a href="#" class="social-list__link">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer-copyright">
+        Разработано
+        <svg class="footer-copyright__logo" fill="#63d1bb" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+        <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"></path>
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
