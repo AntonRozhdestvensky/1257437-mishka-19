@@ -1,6 +1,5 @@
 .page-header {
   padding-top: 22px;
-  border-bottom: 1px solid @gray;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,6 +36,9 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    border-bottom: 1px solid @gray;
+  }
   .page-header__logo {
     width: 149px;
     height: 72px;
@@ -44,5 +46,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 2;
   }
 }

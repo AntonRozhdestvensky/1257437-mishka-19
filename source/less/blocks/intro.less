@@ -2,7 +2,7 @@
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  background-color: @gray;
+  background-color: @gray-2;
   position: relative;
 }
 
@@ -120,11 +120,10 @@
 
 @media (min-width: @desktop-width) {
   .intro {
-    max-width: 1150px;
     margin: 0 auto;
     padding: 0;
     margin-bottom: 71px;
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/hero-desktop-jpg.png");
 
     &::after {
       content: "";
@@ -138,6 +137,11 @@
       bottom: -13px;
       left: 0;
     }
+  }
+
+  .intro__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
   }
 
   .intro__title {
