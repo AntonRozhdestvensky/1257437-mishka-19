@@ -1,0 +1,42 @@
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 146px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 21px;
+
+  list-style: none;
+}
+
+.social__link {
+  display: block;
+
+  &--twitter {
+    margin-right: 6px;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: #46c1ae;
+  }
+
+  &:active path,
+  & svg:active path {
+    fill: fade(#46c1ae, 30%);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding-bottom: 0;
+
+    border: none;
+  }
+}
