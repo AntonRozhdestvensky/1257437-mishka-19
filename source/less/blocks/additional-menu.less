@@ -1,0 +1,42 @@
+.additional-menu {
+  display: none;
+  margin: 0;
+  margin-top: 19px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.additional-menu__item {
+  margin-right: 61px;
+  padding: 0;
+}
+
+.additional-menu__link {
+  display: block;
+
+  font-style: normal;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: @font;
+  color: @color-heading;
+  text-decoration: none;
+
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-menu {
+    display: flex;
+  }
+}

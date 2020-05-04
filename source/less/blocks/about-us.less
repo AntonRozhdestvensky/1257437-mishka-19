@@ -1,0 +1,47 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  font-family: @font;
+  color: @color-heading;
+}
+
+.about-us__advantages {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us__title {
+    margin-bottom: 50px;
+    margin-left: -4px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__title {
+    padding: 0 175px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__advantages {
+    padding: 0 175px;
+  }
+}
