@@ -1,0 +1,51 @@
+.size-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.size-list__item {
+  width: 31%;
+}
+
+.size-list__label {
+  display: block;
+  cursor: pointer;
+
+  &:hover::after {
+    border-color: fade(@font-color, 30%);
+  }
+
+  &::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    font-style: normal;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 16px;
+    font-family: @font;
+    text-align: center;
+
+    border: 2px solid fade(@font-color, 10%);
+  }
+
+  &--s::after {
+    content: "S";
+  }
+
+  &--m::after {
+    content: "M";
+  }
+
+  &--l::after {
+    content: "L";
+  }
+}
+
+.size-list__input:checked ~ .size-list__label::after {
+  border-color: #62d1ba;
+}

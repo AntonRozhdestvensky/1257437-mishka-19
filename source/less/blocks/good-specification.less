@@ -1,0 +1,39 @@
+.good-specification {
+  border-collapse: collapse;
+}
+
+.good-specification__row {
+  border-bottom: 1px solid @color-border;
+}
+
+.good-specification__field {
+  width: 38%;
+  padding: 7px 0 8px;
+}
+
+.good-specification__value {
+  width: 62%;
+  padding: 7px 0 8px;
+}
+
+@media (min-width: @tablet-width) {
+  .good-specification__field {
+    width: 33%;
+  }
+
+  .good-specification__value {
+    width: 67%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .good-specification {
+    width: 293px;
+    margin-bottom: 109px;
+  }
+
+  .good-specification__field,
+  .good-specification__value {
+    padding-bottom: 9px;
+  }
+}

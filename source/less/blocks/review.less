@@ -1,0 +1,59 @@
+.review {
+  margin-bottom: 31px;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+
+  line-height: 30px;
+}
+
+.review__author {
+  margin: 0;
+  margin-bottom: 9px;
+  padding: 0;
+
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  font-family: @font;
+  color: @color-heading;
+}
+
+.review__author-email {
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    margin: 0;
+  }
+
+  .review__text {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .review__author {
+    margin-bottom: 8px;
+    letter-spacing: 0.7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__text {
+    width: 800px;
+    margin-bottom: 40px;
+  }
+
+  .review__author {
+    margin-bottom: 9px;
+    letter-spacing: 0;
+  }
+}

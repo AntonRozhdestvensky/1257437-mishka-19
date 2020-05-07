@@ -1,0 +1,50 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  svg {
+    flex-shrink: 0;
+    width: 27px;
+    height: 34px;
+    margin-top: 6px;
+    margin-right: 3px;
+
+    fill: @color-highlight;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #46c1ae;
+  }
+
+  &:active .copyright__text {
+    color: fade(@color-heading, 30%);
+  }
+
+  &:active svg,
+  & svg:active {
+    fill: fade(#46c1ae, 30%);
+  }
+}
+
+.copyright__text {
+  margin-right: 30px;
+
+  font-style: normal;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: @font;
+  color: @color-heading;
+
+  &:active {
+    color: fade(@color-heading, 30%);
+  }
+
+  &:active ~ svg {
+    fill: fade(#46c1ae, 30%);
+  }
+}
