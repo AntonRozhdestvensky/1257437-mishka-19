@@ -36,37 +36,29 @@
     color: fade(@color-heading, 30%);
   }
 
-  &--search svg {
-    position: absolute;
-    top: 32px;
-    left: 9.38%;
-
-    width: 21px;
-    height: 18px;
-  }
-
-  &--cart svg {
-    position: absolute;
-    top: 32px;
-    left: 9.38%;
-
-    width: 21px;
-    height: 18px;
-  }
-
-  &--search path,
-  &--cart path {
-    opacity: 0.2;
-  }
-
-  &:hover path,
-  &:focus path {
+  &:hover .secondary-menu__link-icon {
     fill: @color-highlight;
     opacity: 1;
   }
 
-  &:active path,
-  & svg:active path {
+  &:active .secondary-menu__link-icon {
+    fill: fade(@color-highlight, 30%);
+    cursor: pointer;
+  }
+}
+
+.secondary-menu__link-icon {
+  position: absolute;
+  top: 32px;
+  left: 9.38%;
+
+  width: 21px;
+  height: 18px;
+
+  fill: #231f20;
+  opacity: 0.2;
+
+  &:active {
     fill: fade(@color-highlight, 30%);
     cursor: pointer;
   }
@@ -107,12 +99,12 @@
       padding-left: 84px;
     }
 
-    &--cart svg {
+    &--cart .secondary-menu__link-icon {
       top: 35px;
       left: 32px;
     }
 
-    &--search svg {
+    &--search .secondary-menu__link-icon {
       top: 37px;
       left: 34px;
     }

@@ -227,7 +227,7 @@
     margin-bottom: 20px;
   }
 
-  & + svg {
+  & + .form__text-icon {
     position: absolute;
     top: -12px;
     right: 8px;
@@ -235,10 +235,8 @@
     opacity: 0.2;
   }
 
-  &:hover + svg,
-  &:focus + svg,
-  &:hover + svg path,
-  &:focus + svg path {
+  &:hover + .form__text-icon,
+  &:focus + .form__text-icon {
     opacity: 1;
     fill: #63d1ba;
   }
@@ -247,7 +245,7 @@
     margin-top: -23px;
   }
 
-  &--email + svg {
+  &--email + .form__text-icon {
     top: -12px;
     right: 3px;
   }
@@ -420,12 +418,12 @@
       font-size: 19px;
     }
 
-    &--phone + svg {
+    &--phone + .form__text-icon {
       top: 10px;
       right: 27px;
     }
 
-    &--email + svg {
+    &--email + .form__text-icon {
       top: 11px;
       right: 22px;
     }
@@ -495,11 +493,11 @@
   }
 
   .form__text {
-    &--phone + svg {
+    &--phone + .form__text-icon {
       right: 8px;
     }
 
-    &--email + svg {
+    &--email + .form__text-icon {
       right: 4px;
     }
   }

@@ -34,13 +34,16 @@
     transform: translateY(-100%);
   }
 
+  .main-nav--opened .main-nav__wrapper {
+    position: static;
+
+    transform: translateY(0);
+  }
+
   .main-nav__wrapper {
     position: absolute;
-    right: 0;
-    z-index: 2;
 
     width: 100%;
-    max-width: 414px;
 
     background-color: @bg-color;
     transition: transform 0.4s ease-out;
@@ -74,6 +77,8 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     width: 100%;
+    padding-left: 6.51%;
+    padding-right: 6.51%;
   }
 
   .main-nav__wrapper {
@@ -97,5 +102,7 @@
   .main-nav {
     order: -1;
     margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
