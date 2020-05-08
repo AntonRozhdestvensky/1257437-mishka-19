@@ -15,26 +15,21 @@
   font-family: @font;
   color: @color-heading;
 
-  & svg,
-  & path {
-    fill: @color-highlight;
-  }
-
-  &--materials svg {
+  &--materials .advantages__item-icon {
     width: 32px;
     height: 37px;
     margin-bottom: 17px;
     margin-left: 8px;
   }
 
-  &--style svg {
+  &--style .advantages__item-icon {
     width: 47px;
     height: 27px;
     margin-top: 1px;
     margin-bottom: 26px;
   }
 
-  &--likes svg {
+  &--likes .advantages__item-icon {
     width: 34px;
     height: 27px;
     margin-top: 5px;
@@ -42,7 +37,7 @@
     margin-left: 7px;
   }
 
-  &--with-love svg {
+  &--with-love .advantages__item-icon {
     width: 35px;
     height: 34px;
     margin-top: 2px;
@@ -50,7 +45,7 @@
     margin-left: 3px;
   }
 
-  &--support svg {
+  &--support .advantages__item-icon {
     width: 55px;
     height: 23px;
     margin-top: 3px;
@@ -58,13 +53,17 @@
     margin-left: -6px;
   }
 
-  &--gift-box svg {
+  &--gift-box .advantages__item-icon {
     width: 33px;
     height: 32px;
     margin-top: 1px;
     margin-bottom: 20px;
     margin-left: 3px;
   }
+}
+
+.advantages__item-icon {
+  fill: @color-highlight;
 }
 
 @media (min-width: @tablet-width) {
@@ -108,20 +107,20 @@
 
 @media (min-width: @desktop-width) {
   .advantages__item {
-    &--materials svg {
+    &--materials .advantages__item-icon {
       margin-bottom: 15px;
       margin-left: 9px;
     }
 
-    &--style svg {
+    &--style .advantages__item-icon {
       margin-top: 0;
     }
 
-    &--likes svg {
+    &--likes .advantages__item-icon {
       margin-left: 8px;
     }
 
-    &--with-love svg {
+    &--with-love .advantages__item-icon {
       margin-bottom: 16px;
     }
   }

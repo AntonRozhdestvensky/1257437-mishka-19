@@ -18,21 +18,12 @@
   color: @color-primary;
   text-decoration: none;
 
-  & svg {
-    position: absolute;
-    top: 20px;
-    right: 9.38%;
-
-    width: 60px;
-    height: 62px;
-  }
-
   &--interior {
     background-color: @color-highlight;
     transition: 0.4s ease-out;
   }
 
-  &--interior svg {
+  &--interior .categories__link-icon {
     margin-top: 2px;
     margin-right: -4px;
 
@@ -46,11 +37,9 @@
     transition: 0.4s ease-out;
   }
 
-  &--toys svg {
+  &--toys .categories__link-icon {
     margin-right: -3px;
-  }
 
-  &--toys path {
     fill: #149080;
     opacity: 0.5;
     transition: opacity 0.2s ease-out;
@@ -62,10 +51,6 @@
     padding-bottom: 35px;
 
     background-color: #59d5bc;
-
-    svg {
-      opacity: 0.7;
-    }
   }
 
   &--toys:hover,
@@ -74,10 +59,11 @@
     padding-bottom: 35px;
 
     background-color: #46c1ae;
+  }
 
-    path {
-      opacity: 0.7;
-    }
+  &:hover .categories__link-icon,
+  &:focus .categories__link-icon {
+    opacity: 0.7;
   }
 
   &:active .categories__title {
@@ -85,11 +71,19 @@
     transition: none;
   }
 
-  &--interior:active svg,
-  &--toys:active path {
+  &:active .categories__link-icon {
     opacity: 0.3;
     transition: none;
   }
+}
+
+.categories__link-icon {
+  position: absolute;
+  top: 20px;
+  right: 9.38%;
+
+  width: 60px;
+  height: 62px;
 }
 
 .categories__title {
@@ -102,8 +96,8 @@
   font-family: @font;
 
   &:active,
-  &:active + svg,
-  & + svg:active {
+  &:active + .categories__link-icon,
+  & + .categories__link-icon:active {
     opacity: 0.3;
     transition: none;
   }
@@ -123,12 +117,12 @@
   .categories__link {
     padding: 29.5px 10.48%;
 
-    &--interior svg {
+    &--interior .categories__link-icon {
       margin-top: 10px;
       margin-right: -5px;
     }
 
-    &--toys svg {
+    &--toys .categories__link-icon {
       margin-top: 10px;
       margin-right: 2px;
     }
@@ -164,11 +158,11 @@
       padding-bottom: 36px;
     }
 
-    &--interior svg {
+    &--interior .categories__link-icon {
       margin-right: -23px;
     }
 
-    &--toys svg {
+    &--toys .categories__link-icon {
       margin-right: -14px;
     }
   }

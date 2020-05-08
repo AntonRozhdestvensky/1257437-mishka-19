@@ -22,15 +22,18 @@
     margin-right: 6px;
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .social__link-icon {
     fill: #46c1ae;
   }
 
-  &:active path,
-  & svg:active path {
+  &:active .social__link-icon,
+  & .social__link-icon:active {
     fill: fade(#46c1ae, 30%);
   }
+}
+
+.social__link-icon {
+  fill: #231f20;
 }
 
 @media (min-width: @tablet-width) {

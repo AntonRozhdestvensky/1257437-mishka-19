@@ -77,20 +77,20 @@
 }
 
 .catalog-item__add-to-cart {
-  path {
-    opacity: 0.2;
-  }
-
-  &:hover path,
-  &:focus path {
+  &:hover .catalog-item__cart-icon,
+  &:focus .catalog-item__cart-icon {
     fill: @color-highlight;
     opacity: 1;
   }
 
-  &:active path,
-  & svg:active path {
+  &:active .catalog-item__cart-icon,
+  & .catalog-item__cart-icon:active {
     fill: fade(@color-highlight, 30%);
   }
+}
+
+.catalog-item__cart-icon {
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
