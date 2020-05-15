@@ -19,6 +19,7 @@ var copy = require("gulp-copy");
 var del = require("del");
 var uglify = require('gulp-uglify');
 var pipeline = require('readable-stream').pipeline;
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -105,7 +106,7 @@ gulp.task("copy", function () {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task('compress', function () {
+gulp.task("compress", function () {
   return pipeline(
         gulp.src(["source/js/menu-nav.js", "source/js/modal.js"]),
         uglify(),
@@ -114,13 +115,23 @@ gulp.task('compress', function () {
   );
 });
 
+gulp.task("minify-html", function() {
+  return gulp.src("build/*.html")
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(gulp.dest("build"));
+});
+
 gulp.task("build", gulp.series(
   "clean",
   "copy",
   "compress",
   "css",
   "sprite",
-  "html"
-));
+  "html",
+  "minify-html"
+  ));
 
 gulp.task("start", gulp.series("build", "server"));
