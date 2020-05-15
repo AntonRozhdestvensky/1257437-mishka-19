@@ -142,6 +142,9 @@
             </div>
             <a class="catalog-item__link-image" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                 <img class="catalog-item__image" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="315" alt="Большая корзинка для игрушек">
@@ -165,6 +168,9 @@
           <div class="production-process__video">
             <a class="production-process__video-play">Play</a>
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="production-process__video-image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Процесс изготовления игрушек">
@@ -175,8 +181,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+        <a class="page-footer__logo page-footer__logo--link" href="index.html">
+          <svg class="page-footer__logo-icon" width="101.615" height="34.056">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
         <section class="page-footer__social social">
           <ul class="social__list">
@@ -239,8 +247,8 @@
       </form>
     </section>
     <div class="modal-overlay"></div>
-    <script src="js/menu-nav.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/menu-nav.min.js"></script>
+    <script src="js/modal.min.js"></script>
     <script src="js/picturefill.min.js" async=""></script>
   </body>
 </html>
