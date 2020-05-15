@@ -1,73 +1,47 @@
 .about-us {
-  padding: 34px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-style: normal;
   font-size: 25px;
+  font-weight: 700;
   line-height: 30px;
-  font-weight: bold;
+  font-family: @font;
+  color: @color-heading;
+}
+
+.about-us__advantages {
   margin: 0;
-  padding-bottom: 31px;
-}
+  padding: 0;
 
-.about-us__list {
-  .listStyle();
-}
-
-.about-us__item {
-  margin-bottom: 28px;
-}
-
-.about-us__description {
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  color: @primary-text-color;
-  margin: 0;
-  padding-top: 28px;
+  list-style: none;
 }
 
 @media (min-width: @tablet-width) {
-  .about-us {
-    padding: 0 52px;
-    padding-top: 60px;
-    padding-bottom: 20px;
-  }
-
   .about-us__title {
+    margin-bottom: 50px;
+    margin-left: -4px;
+
     font-size: 43px;
     line-height: 50px;
-    color: @primary-text-color;
-    padding-bottom: 47px;
-  }
-
-  .about-us__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about-us__item {
-    width: 50%;
-    margin-bottom: 60px;
-  }
-
-  .about-us__description {
-    font-size: 20px;
-    line-height: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .about-us {
-    max-width: 1050px;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 70px;
-  }
-
   .about-us__title {
+    padding: 0 175px;
+
     font-size: 53px;
     line-height: 57px;
-    padding-bottom: 44px;
+  }
+
+  .about-us__advantages {
+    padding: 0 175px;
   }
 }

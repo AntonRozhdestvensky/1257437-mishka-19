@@ -1,0 +1,108 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 24px;
+  right: 25.5px;
+  z-index: 10;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed:not(.main-nav--nojs) .main-nav__wrapper {
+    transform: translateY(-100%);
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: static;
+
+    transform: translateY(0);
+  }
+
+  .main-nav__wrapper {
+    position: absolute;
+
+    width: 100%;
+
+    background-color: @bg-color;
+    transition: transform 0.4s ease-out;
+  }
+
+  .main-nav--nojs .menu-list__link,
+  .main-nav--nojs .secondary-menu__link {
+    padding-left: 23.44%;
+  }
+
+  .main-nav--nojs .secondary-menu__link svg {
+    left: 9.38%;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+
+    display: block;
+    width: 100%;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 100%;
+    padding-left: 6.51%;
+    padding-right: 6.51%;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 19px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    order: -1;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
