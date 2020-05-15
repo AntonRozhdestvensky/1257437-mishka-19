@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Мишка - милые штуки ручной работы для дома</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <!-- Picturefill -->
     <script>
       // Picture element HTML5 shiv
@@ -114,9 +116,9 @@
               </tr>
             </table>
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/triple-set-mobile.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="good__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
@@ -137,31 +139,31 @@
           </li>
           <li class="advantages__item advantages__item--style">
             <svg class="advantages__item-icon" width="46.575px" height="27.332px">
-              <use xlink:href="#icon-money"></use>
+              <use xlink:href="#icon-feature-money"></use>
             </svg>
             Скандинавский стиль <br>по российской цене
           </li>
           <li class="advantages__item advantages__item--likes">
             <svg class="advantages__item-icon" width="33.05px" height="27.857px">
-              <use xlink:href="#icon-heart"></use>
+              <use xlink:href="#icon-feature-heart"></use>
             </svg>
             Увеличивает лайки <br>на фотографиях
           </li>
           <li class="advantages__item advantages__item--with-love">
             <svg class="advantages__item-icon" width="34.373px" height="34.373px">
-              <use xlink:href="#icon-ball"></use>
+              <use xlink:href="#icon-feature-ball"></use>
             </svg>
             Связано вручную с <br>любовью и умилением
           </li>
           <li class="advantages__item advantages__item--support">
             <svg class="advantages__item-icon" width="54.156px" height="23.183px">
-              <use xlink:href="#icon-rocket"></use>
+              <use xlink:href="#icon-feature-rocket"></use>
             </svg>
             Поддержка отечественного <br>производителя
           </li>
           <li class="advantages__item advantages__item--gift-box">
             <svg class="advantages__item-icon" width="32.666px" height="32.486px">
-              <use xlink:href="#icon-gift"></use>
+              <use xlink:href="#icon-feature-gift"></use>
             </svg>
             Поставляется в <br>подарочной упаковке
           </li>
@@ -205,6 +207,9 @@
         </div>
         <div class="contacts__map">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
             <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Адрес магазина: г. Санкт-Петербург, ул. Большая Конюшеная, д. 19/8, офис 101">
@@ -217,8 +222,10 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+        <a class="page-footer__logo page-footer__logo--link">
+          <svg class="page-footer__logo-icon" width="101.615" height="34.056">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
         <section class="page-footer__social social">
           <ul class="social__list">
@@ -281,8 +288,8 @@
       </form>
     </section>
     <div class="modal-overlay"></div>
-    <script src="js/menu-nav.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/menu-nav.min.js"></script>
+    <script src="js/modal.min.js"></script>
     <script src="js/picturefill.min.js" async=""></script>
   </body>
 </html>
