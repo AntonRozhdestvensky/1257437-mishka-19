@@ -14,7 +14,7 @@ if (href === "/catalog.html") {
     });
   }
 } else {
-  OrderLink.addEventListener("click", function(evt) {
+  orderLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.add("modal-show");
     overlay.classList.add("overlay-show");
