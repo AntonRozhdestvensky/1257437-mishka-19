@@ -17,9 +17,9 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var copy = require("gulp-copy");
 var del = require("del");
-var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
-var htmlmin = require('gulp-htmlmin');
+var uglify = require("gulp-uglify");
+var pipeline = require("readable-stream").pipeline;
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
