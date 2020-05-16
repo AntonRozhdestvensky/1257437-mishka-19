@@ -1,5 +1,5 @@
 var list = document.querySelectorAll(".good__order, .modal, .modal-overlay");
-var OrderLink = list.item(0);
+var orderLink = list.item(0);
 var modal = list.item(list.length-2);
 var overlay = list.item(list.length-1);
 var addToCart = document.querySelectorAll(".catalog-item__add-to-cart");
@@ -14,7 +14,7 @@ if (href === "/catalog.html") {
     });
   }
 } else {
-  OrderLink.addEventListener("click", function(evt) {
+  orderLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     modal.classList.add("modal-show");
     overlay.classList.add("overlay-show");
